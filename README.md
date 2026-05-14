@@ -104,7 +104,7 @@ if ack:
 
 ## Output:
 
-<img width="800" height="820" alt="Screenshot 2026-05-14 162558" src="https://github.com/user-attachments/assets/ab60690a-bb1e-4644-884b-5f435235baf8" />
+<img width="900" height="820" alt="Screenshot 2026-05-14 162558" src="https://github.com/user-attachments/assets/ab60690a-bb1e-4644-884b-5f435235baf8" />
 
 ## Result:
 
