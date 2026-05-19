@@ -81,6 +81,16 @@ Client-server chat applications are foundational to real-time communication over
 CLIENT.PY
 ```
 import socket
+s=socket.socket()
+s.connect(('localhost',6000))
+print(s.getsockname())
+print(s.recv(1024).decode())
+s.send("acknowledgement recived from the server".encode())
+```
+
+SERVER.PY
+```
+import socket
 from datetime import datetime
 s=socket.socket()
 s.bind(('localhost',6000))
@@ -95,19 +105,9 @@ if ack:
     c.close()
 ```
 
-SERVER.PY
-```
-import socket
-s=socket.socket()
-s.connect(('localhost',6000))
-print(s.getsockname())
-print(s.recv(1024).decode())
-s.send("acknowledgement recived from the server".encode())
-```
-
 ## Output:
 
-<img width="920" height="820" alt="{4FAB2610-0F0A-45F4-8270-F42626DC28C3}" src="https://github.com/user-attachments/assets/19a3ac50-fe2e-4328-9e38-45afc7cb7370" />
+<img width="1000" height="947" alt="{7C470E5E-9EE0-4AF3-8CDE-F0D793F0F347}" src="https://github.com/user-attachments/assets/de36ac96-3996-4196-b343-c189b8ca3765" />
 
 
 ## Result:
